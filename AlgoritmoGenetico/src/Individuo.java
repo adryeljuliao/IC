@@ -84,19 +84,19 @@ public class Individuo implements Comparable<Individuo>{
 	}
 
 	public void setQtdMesa() {
-		this.qtdMesa = random.nextInt();
+		this.qtdMesa = random.nextInt(100);
 	}
 	
 	public void setQtdArmario() {
-		this.qtdArmario = random.nextInt();
+		this.qtdArmario = random.nextInt(100);
 	}
 	
 	public void setQtdPrateleira() {
-		this.qtdPrateleira = random.nextInt();
+		this.qtdPrateleira = random.nextInt(100);
 	}
 
 	public void setQtdEscrivaninha() {
-		this.qtdEscrivaninha = random.nextInt();
+		this.qtdEscrivaninha = random.nextInt(100);
 	}
 
 

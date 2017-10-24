@@ -13,8 +13,7 @@ public class Genetico {
 	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 	}
 
 	
@@ -43,7 +42,7 @@ public class Genetico {
 		int aux, aux2;
 		
 		for (int i = 0; i < pais.size(); i++){
-			
+			//taxa de mutação
 			if(r.nextDouble() < 0.5){
 				
 				geneX = pais.get(i).getGenes();
@@ -55,8 +54,8 @@ public class Genetico {
 				
 				aux2 = geneX[1];
 				geneX[1] = geneY[1];
-				geneY[1] = aux2;
-				
+				geneY[1] = aux2;				
+				//falta criar o individuo e passar esses genes
 				
 				
 			}else{
