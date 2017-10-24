@@ -37,8 +37,34 @@ public class Genetico {
 	
 	public ArrayList<Individuo> cruzamento(ArrayList<Individuo> pais){
 		ArrayList<Individuo> filhos = new ArrayList<>();
+		int geneX[] = new int [4];
+		int geneY[] = new int [4];
 		
+		int aux, aux2;
 		
+		for (int i = 0; i < pais.size(); i++){
+			
+			if(r.nextDouble() < 0.5){
+				
+				geneX = pais.get(i).getGenes();
+				geneY = pais.get(i+1).getGenes();
+				
+				aux = geneX[0];
+				geneX[0] = geneY[0];
+				geneY[0] = aux;
+				
+				aux2 = geneX[1];
+				geneX[1] = geneY[1];
+				geneY[1] = aux2;
+				
+				
+				
+			}else{
+				filhos.add(pais.get(i));
+			}
+			
+			
+		}
 		
 		
 		
